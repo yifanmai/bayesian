@@ -46,5 +46,5 @@ end
 
 true_positive_rate = pred_count[:spam][:spam].to_f / (pred_count[:spam][:spam] + pred_count[:spam][:ham]).to_f
 false_positive_rate = pred_count[:ham][:spam].to_f / (pred_count[:ham][:spam] + pred_count[:ham][:ham]).to_f
-puts 'True positive rate: %.3f' % true_positive_rate
-puts 'False positive rate: %.3f' % false_positive_rate
+puts 'True positive rate: %.3f%%' % (true_positive_rate * 100)
+puts 'False positive rate: %.3f%%' % (false_positive_rate * 100)
