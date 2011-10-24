@@ -5,6 +5,7 @@ This is a spam filter that implements a classic Naive Bayes classifier with Lapl
 ## Usage
 
 See demo.rb for an example of usage.
+
     require 'bayesian.rb'
     filter = BayesianFilter.new
 
